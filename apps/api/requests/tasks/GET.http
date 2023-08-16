@@ -1,0 +1,17 @@
+@URI=http://localhost:3000/api/tasks
+
+### Get all tasks
+# @name getAllTasks
+GET {{URI}}
+
+@taskId = {{getAllTasks.response.body.$[0]._id}}
+@taskNotFoundId = 64d87cb109b118966564be6d
+@taskInvalidId = 64d87cb109b118966564be6
+### Get one task
+GET {{URI}}/{{taskId}}
+
+### Get one task (NOT FOUND)
+GET {{URI}}/{{taskNotFoundId}}
+
+### Get one task (INVALID ID)
+GET {{URI}}/{{taskInvalidId}}

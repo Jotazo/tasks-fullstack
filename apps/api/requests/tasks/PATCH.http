@@ -1,0 +1,50 @@
+@URI=http://localhost:3000/api/tasks
+
+### Get all tasks
+# @name getAllTasks
+GET {{URI}}
+
+### Update one task
+@titleUpdated = New Task Title Updated
+@descriptionUpdated = New Task Description Updated
+@doneUpdated = true
+@taskId = {{getAllTasks.response.body.$[0]._id}}
+@taskNotFoundId = 64d87cb109b118966564be6d
+@taskInvalidId = 64d87cb109b118966564be
+PATCH {{URI}}/{{taskId}}
+Content-Type: application/json
+
+{
+  "title": "{{titleUpdated}}",
+  "description": "{{titleUpdated}}",
+  "done": {{doneUpdated}}
+}
+
+### Update one task (NOT FOUND)
+PATCH {{URI}}/{{taskNotFoundId}}
+Content-Type: application/json
+
+{
+  "title": "{{titleUpdated}}",
+  "description": "{{titleUpdated}}",
+  "done": {{doneUpdated}}
+}
+
+### Update one task (INVALID ID)
+PATCH {{URI}}/{{taskInvalidId}}
+Content-Type: application/json
+
+{
+  "title": "{{titleUpdated}}",
+  "description": "{{titleUpdated}}",
+  "done": {{doneUpdated}}
+}
+
+### Update one task (INVALID TITLE)
+PATCH {{URI}}/{{taskId}}
+Content-Type: application/json
+
+{
+  "title": 3,
+  "description": "Description!"
+}

@@ -1,0 +1,45 @@
+@URI=http://localhost:3000/api/tasks
+
+### Create one task
+@title = Buy some cookiesss
+@description = Buy cookies!
+POST {{URI}}
+Content-Type: application/json
+
+{
+  "title": "{{title}}",
+  "description": "{{description}}"
+}
+
+### Create one task (NO TITLE)
+POST {{URI}}
+Content-Type: application/json
+
+{
+  "description": "{{description}}"
+}
+
+### Create one task (NO DESCRIPTION)
+POST {{URI}}
+Content-Type: application/json
+
+{
+  "title": "{{title}}"
+}
+
+### Create one task (EMPTY TASK)
+POST {{URI}}
+Content-Type: application/json
+
+{
+}
+
+### Create one task (TITLE NUM)
+POST {{URI}}
+Content-Type: application/json
+
+{
+  "title": 3,
+  "description": "{{description}}"
+}
+

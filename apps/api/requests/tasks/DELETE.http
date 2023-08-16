@@ -1,0 +1,18 @@
+@URI=http://localhost:3000/api/tasks
+
+### Get all tasks
+# @name getAllTasks
+GET {{URI}}
+
+@taskId = {{getAllTasks.response.body.$[0]._id}}
+@taskNotFoundId = 64d87cae09b118966564be6d
+@taskInvalidId = 64d87cae09b118966564be
+
+### Delete one task
+DELETE {{URI}}/{{taskId}}
+
+### Delete one task (NOT FOUND)
+DELETE {{URI}}/{{taskNotFoundId}}
+
+### Delete one task (INVALID ID)
+DELETE {{URI}}/{{taskInvalidId}}
