@@ -1,0 +1,6 @@
+- type: web
+  name: tasks-fullstack
+  runtime: static
+  staticPublishPath: ./apps/api/public
+  buildCommand: npm run build
+  startCommand: npm start
