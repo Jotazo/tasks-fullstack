@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
-    "start": "npm start --workspace api"
+    "start": "npm start --workspace api",
+    "render:build": "npm install && npm run build"
   },
   "keywords": [],
   "author": "",
