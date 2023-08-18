@@ -1,3 +1,4 @@
+services:
 - type: web
   name: tasks-fullstack
   runtime: static
