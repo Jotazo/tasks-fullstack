@@ -1,28 +1,51 @@
 # Task App
-Proyecto basado en el tutorial de [Fazt Code](https://www.youtube.com/@FaztCode) para crear una aplicación de tareas con [Next.js](https://nextjs.org/).
+Proyecto basado en el tutorial de [Fazt Code][FaztCode] para crear una aplicación de tareas con [Next.js][Next].
 
-[Tutorial fazt code NEXT MONGODB](https://www.youtube.com/watch?v=CkiuF2wsPRg)
+[![Tutorial fazt code NEXT MONGODB][YTImage]][YTVideo]
 
-Es un [CRUD](https://es.wikipedia.org/wiki/CRUD) sencillo donde se pueden crear, leer, actualizar y eliminar tareas.
-Se almacenan en una base de datos ***NoSQL*** con [MongoDB](https://www.mongodb.com/es) haciendo uso del ***ORM*** [Mongoose](https://mongoosejs.com/)
+Es un [CRUD][WIKI-CRUD] sencillo donde se pueden crear, leer, actualizar y eliminar tareas.
+Se almacenan en una base de datos ***NoSQL*** con [MongoDB][MongoDB] haciendo uso del ***ORM*** [Mongoose][Mongoose]
 
-He cambiado la tecnología para dicha aplicación la cual usa [Nest](https://nestjs.com/) como backend, [Vite](https://vitejs.dev/) como frontend y [Turbo](https://turbo.build/) para la creación del monorepositorio.
-También se usan [Framer motion](https://www.framer.com/motion/) para animaciones, [SweetAlert2](https://sweetalert2.github.io/) para creación de pop-ups y [React Toastify](https://github.com/fkhadra/react-toastify#readme) para mostrar notificaciones
-
-
+He cambiado la tecnología para dicha aplicación la cual usa [Nest][Nest] como backend, [Vite][Vite] como frontend y [Turbo][Turbo] para la creación del monorepositorio.
+También se usan [Framer motion][FramerMotion] para animaciones, [SweetAlert2][SweetAlert2] para creación de pop-ups y [React Toastify][ReactToastify] para mostrar notificaciones
 
 ## Demo
 > Importante: Al usar el servicio gratuito de [Render](https://render.com/) puede ser que al cargar la aplicación tarde un poco
 
-[Task App Demo](https://tasks-fullstack.onrender.com/)
+[Task App Demo][App]
 
 ## Tecnologías usadas
-  - [Vite](https://vitejs.dev/)
-  - [Framer motion](https://www.framer.com/motion/)
-  - [SweetAlert2](https://sweetalert2.github.io/)
-  - [React Toastify](https://github.com/fkhadra/react-toastify#readme) 
-  - [Typescript](https://www.typescriptlang.org/)
-  - [Tailwind](https://tailwindcss.com/)
-  - [Nestjs](https://nestjs.com/)
-  - [Mongoose](https://mongoosejs.com/)
-  - [Turbo](https://turbo.build/)
+  - [Vite][Vite]
+  - [Framer motion][FramerMotion]
+  - [SweetAlert2][SweetAlert2]
+  - [React Toastify][ReactToastify]
+  - [Typescript][Typescript]
+  - [Tailwind][Tailwind]
+  - [Nestjs][Nest]
+  - [Mongoose][Mongoose]
+  - [Turbo][Turbo]
+
+## Screenshots
+> Mockups generados con: [Shots.so][Shots.so]
+
+![Screenshot Mobile](./screenshots/mobile.png)
+![Screenshot Tablet](./screenshots/tablet.png)
+
+[App]: https://tasks-fullstack.onrender.com/
+[FaztCode]: https://www.youtube.com/@FaztCode
+[FramerMotion]: https://www.framer.com/motion/
+[MongoDB]: https://www.mongodb.com/es
+[Mongoose]: https://mongoosejs.com/
+[Next]: https://nextjs.org/
+[Nest]: https://nestjs.com/
+[ReactToastify]: https://github.com/fkhadra/react-toastify#readme
+[Shots.so]: https://shots.so/
+[SweetAlert2]: https://sweetalert2.github.io/
+[Tailwind]: https://tailwindcss.com/
+[Turbo]: https://turbo.build/
+[Typescript]: https://www.typescriptlang.org/
+[Vite]: https://vitejs.dev/
+[WIKI-CRUD]: https://es.wikipedia.org/wiki/CRUD
+
+[YTImage]: https://img.youtube.com/vi/CkiuF2wsPRg/0.jpg
+[YTVideo]: https://www.youtube.com/watch?v=CkiuF2wsPRg
